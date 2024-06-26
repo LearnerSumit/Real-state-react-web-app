@@ -1,0 +1,29 @@
+.listdata{
+    display: flex;
+    height: 100%;
+    .listContainer{
+        flex: 3;
+        .wrapper{
+            height: 100%;
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            padding-bottom: 40px;
+            &::-webkit-scrollbar{
+                width:8px;
+            }
+
+            &::-webkit-scrollbar-thumb{
+                background-color: #dadada;
+                border-radius: 10px;
+            }
+        }
+    }
+    .mapContainer{
+        flex: 2;
+        background-color: #fcf5f3;
+    }
+}
